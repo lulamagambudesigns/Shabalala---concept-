@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T Shabalala Attorneys Inc</title>
+<meta name="description" content="T Shabalala Attorneys Inc: Road Accident Fund and medical negligence claims, criminal defence, labour, family law and estates. Offices in Pretoria, Ladysmith and Scottburgh.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="T Shabalala Attorneys Inc">
+<meta property="og:description" content="Road Accident Fund and medical negligence claims, criminal defence, labour, family law and estates. Offices in Pretoria, Ladysmith and Scottburgh.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: an editorial law-firm site. Large serif statements on deep navy, a numbered index of expertise,
+   and the firm's own circle motif (from its banner) as the single recurring graphic. One goal: book a consultation. */
+:root{
+  --ink:#0B1633;      /* midnight: text, deepest bands */
+  --navy:#1B2F6B;     /* brand navy */
+  --blue:#2B59C3;     /* signal blue: links, accents */
+  --sky:#8DB0EA;      /* accents on navy only */
+  --mist:#EEF3FC;     /* quiet section ground */
+  --paper:#FFFFFF;
+  --line:#DCE3F0;
+  --muted:#4A5573;
+  --on-navy:#C9D5EE;
+  --serif:"Newsreader", "Iowan Old Style", Georgia, serif;
+  --sans:"Montserrat", "Segoe UI", system-ui, sans-serif;
+  --wrap:1240px;
+  --gut:clamp(20px, 4vw, 48px);
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:var(--blue)}
+a:hover{color:var(--navy)}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-0.015em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.eyebrow{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.on-navy .eyebrow{color:var(--sky)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;font-family:var(--sans);font-weight:600;font-size:15px;letter-spacing:.01em;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-primary:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--navy)}
+.btn-light:hover{background:var(--mist);color:var(--navy)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(141,176,234,.7)}
+.btn-ghost:hover{border-color:#fff;color:#fff}
+.btn-outline{background:transparent;color:var(--navy);border-color:var(--navy)}
+.btn-outline:hover{background:var(--navy);color:#fff}
+.arrow{transition:transform .2s}
+a:hover .arrow,button:hover .arrow{transform:translateX(4px)}
+
+/* Utility bar */
+.utility{background:var(--ink);color:var(--on-navy);font-size:13px}
+.utility .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:40px;flex-wrap:wrap}
+.utility a{color:#fff;font-weight:600;text-decoration:none}
+.utility .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--sky);margin-right:10px;vertical-align:middle}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:40;background:var(--navy);transition:background .25s, box-shadow .25s}
+.site-header.scrolled{background:#fff;box-shadow:0 1px 0 var(--line),0 10px 30px rgba(11,22,51,.06)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#fff}
+.scrolled .brand{color:var(--navy)}
+.crest{width:44px;height:44px;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;font-family:var(--serif);font-size:18px;flex:none}
+.brand-name{display:flex;flex-direction:column;line-height:1.05}
+.brand-name strong{font-family:var(--sans);font-weight:700;font-size:17px;letter-spacing:.02em}
+.brand-name span{font-size:10.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;opacity:.8}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a.link{color:#fff;text-decoration:none;font-size:14px;font-weight:500;position:relative;padding:6px 0}
+.scrolled .nav a.link{color:var(--ink)}
+.nav a.link::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1.5px;background:currentColor;transition:right .25s}
+.nav a.link:hover::after,.nav a.link.active::after{right:0}
+.site-header .btn{min-height:46px;padding:0 22px}
+.scrolled .btn-light{background:var(--navy);color:#fff}
+.menu-btn{display:none;width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(255,255,255,.5);background:transparent;color:#fff;cursor:pointer;align-items:center;justify-content:center}
+.scrolled .menu-btn{border-color:var(--line);color:var(--navy)}
+
+/* Hero */
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;align-items:center;padding-top:clamp(56px,8vw,112px);padding-bottom:clamp(64px,8vw,120px)}
+.hero h1{font-size:clamp(44px,6.4vw,92px);line-height:.98;letter-spacing:-0.03em;margin:22px 0 26px}
+.hero h1 em{font-style:italic;color:var(--sky)}
+.hero .lede{font-size:clamp(17px,1.5vw,20px);line-height:1.6;color:var(--on-navy);max-width:34em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero .assure{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:30px;font-size:14px;color:var(--on-navy)}
+.hero .assure span{display:flex;align-items:center;gap:10px}
+.hero .assure span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--sky)}
+.rings{position:relative;aspect-ratio:1;width:100%;max-width:520px;justify-self:end}
+.rings svg{width:100%;height:100%;overflow:visible}
+.rings .spin{transform-origin:260px 260px;animation:spin 80s linear infinite}
+.rings .spin.rev{animation-duration:120s;animation-direction:reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-card{position:absolute;left:-8%;bottom:8%;background:#fff;color:var(--ink);border-radius:20px;padding:20px 22px;width:min(300px,80%);box-shadow:0 30px 60px rgba(11,22,51,.35);text-decoration:none;display:flex;flex-direction:column;gap:6px}
+.hero-card small{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+.hero-card strong{font-family:var(--serif);font-weight:500;font-size:22px;line-height:1.2}
+.hero-card span{font-size:14px;font-weight:600;color:var(--navy)}
+.hero-card:hover{color:var(--ink)}
+.portrait-ring{position:absolute;inset:23%;border-radius:50%;background:linear-gradient(160deg,#24407F,#152657);border:6px solid rgba(255,255,255,.9);display:grid;place-items:center;text-align:center;color:var(--on-navy)}
+.portrait-ring b{font-family:var(--serif);font-weight:400;font-size:clamp(40px,5vw,64px);color:#fff;line-height:1}
+.portrait-ring i{font-style:normal;font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-top:8px;display:block}
+/* page-load moment */
+@media (prefers-reduced-motion:no-preference){
+  .hero .reveal{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .hero .reveal:nth-child(2){animation-delay:.08s}
+  .hero .reveal:nth-child(3){animation-delay:.16s}
+  .hero .reveal:nth-child(4){animation-delay:.24s}
+  .hero .reveal:nth-child(5){animation-delay:.32s}
+  @keyframes rise{from{transform:translateY(18px);opacity:.001}to{transform:none;opacity:1}}
+  .rings .draw circle{stroke-dasharray:1700;stroke-dashoffset:1700;animation:draw 2.4s .2s cubic-bezier(.3,.6,.2,1) forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+}
+@media (prefers-reduced-motion:reduce){.rings .spin{animation:none}html{scroll-behavior:auto}}
+
+/* Figures band */
+.figures{border-bottom:1px solid var(--line)}
+.figures .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.fig{padding:34px 28px 34px 0;display:flex;flex-direction:column;gap:6px}
+.fig + .fig{border-left:1px solid var(--line);padding-left:28px}
+.fig b{font-family:var(--serif);font-weight:400;font-size:clamp(34px,3.4vw,48px);line-height:1;color:var(--navy);font-variant-numeric:tabular-nums}
+.fig span{font-size:14px;color:var(--muted)}
+
+/* Sections */
+section{scroll-margin-top:84px}
+.section{padding:clamp(72px,9vw,128px) 0}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end;margin-bottom:clamp(40px,5vw,64px)}
+.head h2{font-size:clamp(36px,4.4vw,60px);line-height:1.04;margin-top:18px}
+.head p{color:var(--muted);font-size:17px;max-width:34em}
+
+/* Statement */
+.statement{background:var(--paper)}
+.statement p.big{font-family:var(--serif);font-size:clamp(26px,3vw,40px);line-height:1.3;letter-spacing:-0.01em;max-width:24em;color:var(--ink)}
+.statement p.big em{color:var(--blue)}
+.statement .sig{margin-top:28px;display:flex;align-items:center;gap:14px;font-size:14px;color:var(--muted)}
+.statement .sig::before{content:"";width:40px;height:1px;background:var(--navy)}
+
+/* Practice index */
+.practice{background:var(--mist)}
+.index{list-style:none;margin:0;padding:0;border-top:1px solid #C9D3E6}
+.index li{border-bottom:1px solid #C9D3E6}
+.pr-row{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:grid;grid-template-columns:72px minmax(0,1.1fr) minmax(0,1.3fr) 56px;gap:24px;align-items:center;padding:30px 8px;transition:background .25s,padding .25s}
+.pr-row:hover{background:#fff;padding-left:20px;padding-right:20px}
+.pr-row:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
+.pr-num{font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--blue);font-variant-numeric:tabular-nums}
+.pr-title{font-family:var(--serif);font-size:clamp(24px,2.4vw,34px);line-height:1.15;color:var(--ink)}
+.pr-title small{display:inline-block;vertical-align:middle;margin-left:12px;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--navy);padding:5px 10px;border-radius:999px}
+.pr-desc{font-size:15px;color:var(--muted);line-height:1.6}
+.pr-go{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--navy);display:grid;place-items:center;color:var(--navy);justify-self:end;transition:background .25s,color .25s}
+.pr-row:hover .pr-go{background:var(--navy);color:#fff}
+
+/* Approach */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:s}
+.steps li{padding:0 28px 0 0;position:relative}
+.steps li + li{padding-left:28px;border-left:1px solid var(--line)}
+.steps .n{width:52px;height:52px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:22px;margin-bottom:22px}
+.steps li:nth-child(2) .n{background:var(--blue)}
+.steps li:nth-child(3) .n{background:var(--sky);color:var(--ink)}
+.steps li:nth-child(4) .n{background:var(--mist);color:var(--navy);border:1.5px solid var(--sky)}
+.steps h3{font-size:24px;line-height:1.2;margin-bottom:10px}
+.steps p{color:var(--muted);font-size:15px}
+
+/* Commitments */
+.commit{background:var(--ink);color:#fff}
+.commit .head p{color:var(--on-navy)}
+.commit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(141,176,234,.25);border-radius:24px;overflow:hidden}
+.commit-grid div{background:var(--ink);padding:34px 28px;display:flex;flex-direction:column;gap:12px}
+.commit-grid b{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.2}
+.commit-grid p{color:var(--on-navy);font-size:15px}
+.commit-grid .ico{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--sky);display:grid;place-items:center;color:var(--sky)}
+
+/* Founder */
+.founder .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,6vw,96px);align-items:center}
+.f-visual{position:relative;aspect-ratio:4/5;border-radius:28px;background:var(--navy);overflow:hidden;display:grid;place-items:center}
+.f-visual .circ{position:absolute;border-radius:50%}
+.f-visual .c1{width:120%;aspect-ratio:1;border:1px solid rgba(141,176,234,.25);right:-50%;top:-30%}
+.f-visual .c2{width:80%;aspect-ratio:1;border:1px solid rgba(141,176,234,.35);right:-25%;top:-10%}
+.f-visual .c3{width:22%;aspect-ratio:1;background:var(--blue);left:8%;bottom:7%}
+.f-visual .ph{position:relative;width:62%;aspect-ratio:1;border-radius:50%;background:linear-gradient(160deg,#2A468A,#15275A);border:8px solid #fff;display:grid;place-items:center;text-align:center;color:var(--on-navy)}
+.f-visual .ph b{font-family:var(--serif);font-weight:400;font-size:clamp(48px,6vw,80px);color:#fff;line-height:1}
+.f-visual .ph i{font-style:normal;font-size:11px;letter-spacing:.18em;text-transform:uppercase;display:block;margin-top:8px}
+.founder h2{font-size:clamp(36px,4.2vw,58px);line-height:1.05;margin:18px 0 22px}
+.founder .bio{font-size:17px;color:#33405E;max-width:36em}
+.timeline{list-style:none;margin:32px 0 34px;padding:0;border-top:1px solid var(--line)}
+.timeline li{display:grid;grid-template-columns:80px minmax(0,1fr);gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.timeline b{font-family:var(--serif);font-weight:500;font-size:20px;color:var(--navy);font-variant-numeric:tabular-nums}
+
+/* Offices */
+.offices{background:var(--mist)}
+.office-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.office{background:#fff;border-radius:24px;padding:34px 30px;display:flex;flex-direction:column;gap:14px;border:1px solid var(--line)}
+.office .tag{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+.office h3{font-size:34px;line-height:1.1}
+.office address{font-style:normal;color:var(--muted);font-size:15px;line-height:1.6;min-height:4.8em}
+.office .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+.office .btn{min-height:46px;padding:0 20px;font-size:14px}
+
+/* Community */
+.community .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(40px,6vw,96px);align-items:start}
+.community h2{font-size:clamp(36px,4.2vw,58px);line-height:1.05;margin:18px 0 20px}
+.community .lead{font-size:17px;color:var(--muted)}
+.pillars{display:grid;gap:14px}
+.pillar{display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding:24px;border-radius:20px;border:1px solid var(--line)}
+.pillar .ico{width:56px;height:56px;border-radius:50%;background:var(--mist);display:grid;place-items:center;color:var(--navy)}
+.pillar h3{font-size:23px;margin-bottom:6px}
+.pillar p{font-size:15px;color:var(--muted)}
+
+/* Guides */
+.guides{border-top:1px solid var(--line)}
+.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.guide{border-radius:24px;overflow:hidden;border:1px solid var(--line);text-decoration:none;color:var(--ink);display:flex;flex-direction:column;background:#fff;transition:transform .25s,box-shadow .25s}
+.guide:hover{transform:translateY(-4px);box-shadow:0 24px 48px rgba(11,22,51,.10);color:var(--ink)}
+.guide .art{aspect-ratio:16/9;background:var(--navy);position:relative;overflow:hidden}
+.guide .art span{position:absolute;border-radius:50%}
+.guide .body{padding:24px 26px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+.guide small{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+.guide h3{font-size:26px;line-height:1.15}
+.guide p{font-size:15px;color:var(--muted)}
+.guide .more{margin-top:auto;font-size:14px;font-weight:600;color:var(--navy)}
+
+/* FAQ */
+.faq .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,6vw,96px)}
+.faq h2{font-size:clamp(36px,4.2vw,58px);line-height:1.05;margin:18px 0 20px}
+.faq .lead{color:var(--muted);font-size:17px;margin-bottom:26px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-family:var(--serif);font-size:22px;line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:40px;height:40px;border-radius:50%;background:var(--mist);display:grid;place-items:center;color:var(--navy);transition:transform .25s,background .25s}
+.faq details[open] summary .pm{transform:rotate(45deg);background:var(--navy);color:#fff}
+.faq details p{padding:0 56px 24px 0;color:#33405E;font-size:16px}
+
+/* Consult */
+.consult{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.consult .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:center}
+.consult h2{font-size:clamp(38px,4.6vw,64px);line-height:1.02;margin:18px 0 22px}
+.consult .lead{color:var(--on-navy);font-size:18px;max-width:30em}
+.contact-lines{margin-top:34px;display:grid;gap:14px}
+.contact-lines a,.contact-lines div{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font-size:16px}
+.contact-lines .ico{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(141,176,234,.6);display:grid;place-items:center;flex:none;color:var(--sky)}
+.consult .bg1{position:absolute;width:640px;height:640px;border-radius:50%;background:var(--blue);opacity:.25;right:-220px;top:-260px}
+.consult .bg2{position:absolute;width:24px;height:24px;border-radius:50%;background:var(--sky);left:46%;bottom:64px}
+.form{background:#fff;color:var(--ink);border-radius:28px;padding:clamp(24px,3vw,40px);box-shadow:0 40px 80px rgba(11,22,51,.35)}
+.form h3{font-size:30px;margin-bottom:6px}
+.form .sub{color:var(--muted);font-size:14px;margin-bottom:22px}
+.field{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+.field label,.legend{font-size:13px;font-weight:600}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--ink);border:1px solid #B9C5DD;border-radius:12px;padding:13px 14px;background:#fff;min-height:50px;width:100%}
+.field textarea{min-height:96px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(43,89,195,.18)}
+.field.invalid input,.field.invalid select{border-color:#B42318}
+.err{font-size:13px;color:#B42318;display:none}
+.field.invalid .err{display:block}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 18px}
+.chip{font:inherit;font-size:14px;font-weight:600;border:1px solid #B9C5DD;background:#fff;color:#33405E;border-radius:999px;padding:0 16px;min-height:42px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#33405E;margin:4px 0 20px;line-height:1.5}
+.consent input{width:20px;height:20px;margin:0;flex:none;accent-color:var(--navy)}
+.consent.invalid{color:#B42318}
+.form .btn{width:100%;min-height:56px;font-size:16px}
+.success{display:none;text-align:center;padding:24px 0}
+.success .tick{width:72px;height:72px;border-radius:50%;background:var(--mist);display:grid;place-items:center;margin:0 auto 18px;color:var(--navy)}
+.success h3{margin-bottom:10px}
+.success p{color:var(--muted)}
+.form.done form{display:none}
+.form.done .success{display:block}
+
+/* Footer */
+footer{background:var(--ink);color:var(--on-navy);padding:72px 0 36px;font-size:14px}
+.f-top{display:grid;grid-template-columns:1.3fr repeat(3,minmax(0,1fr));gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(141,176,234,.2)}
+.f-top h4{margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sky)}
+.f-top a{color:#fff;text-decoration:none}
+.f-top a:hover{text-decoration:underline}
+.f-top ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.f-brand p{margin-top:16px;max-width:26em}
+.f-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-top:24px;font-size:12.5px;color:#A9B6D4}
+.f-bottom a{color:#A9B6D4}
+
+/* Drawer */
+.scrim{position:fixed;inset:0;background:rgba(11,22,51,.55);opacity:0;pointer-events:none;transition:opacity .3s;z-index:60}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(560px,100%);background:#fff;z-index:61;transform:translateX(100%);transition:transform .35s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;visibility:hidden}
+.open .scrim{opacity:1;pointer-events:auto}
+.open .drawer{transform:none;visibility:visible}
+.d-head{background:var(--navy);color:#fff;padding:28px 32px 32px;position:relative;overflow:hidden}
+.d-head::after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:var(--blue);opacity:.35;right:-80px;top:-100px}
+.d-close{position:absolute;right:20px;top:20px;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.5);background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;z-index:1}
+.d-head .num{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--sky)}
+.d-head h3{font-size:clamp(30px,4vw,40px);line-height:1.1;margin:10px 60px 10px 0;position:relative;z-index:1}
+.d-head p{color:var(--on-navy);position:relative;z-index:1}
+.d-body{padding:28px 32px;overflow-y:auto;flex:1}
+.d-body h4{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin:0 0 12px}
+.d-body ul{margin:0 0 26px;padding:0;list-style:none;display:grid;gap:10px}
+.d-body li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:10px;font-size:15px}
+.d-body li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue);margin-top:8px}
+.d-foot{padding:18px 32px 24px;border-top:1px solid var(--line);display:flex;gap:10px;flex-wrap:wrap}
+.d-foot .btn{flex:1 1 auto}
+
+/* Mobile menu */
+.mnav{position:fixed;inset:0;background:var(--ink);z-index:70;display:flex;flex-direction:column;padding:20px var(--gut) 28px;transform:translateY(-100%);transition:transform .35s cubic-bezier(.2,.7,.2,1);visibility:hidden}
+.menu-open .mnav{transform:none;visibility:visible}
+.mnav .top{display:flex;justify-content:space-between;align-items:center;color:#fff;margin-bottom:28px}
+.mnav nav{display:flex;flex-direction:column}
+.mnav nav a{font-family:var(--serif);font-size:34px;color:#fff;text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(141,176,234,.18);display:flex;justify-content:space-between;align-items:center}
+.mnav .call{margin-top:auto;display:grid;gap:10px}
+.mnav .urgent{color:var(--on-navy);font-size:14px}
+
+/* Mobile action bar */
+.mbar{display:none}
+
+/* Responsive */
+@media (max-width:1080px){
+  .nav .link{display:none}
+  .menu-btn{display:inline-flex}
+  .pr-row{grid-template-columns:56px minmax(0,1fr) 48px}
+  .pr-desc{grid-column:2;grid-row:2}
+  .pr-go{grid-row:1/3;grid-column:3}
+  .commit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px}
+  .steps li:nth-child(3){padding-left:0;border-left:0}
+  .f-top{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .rings{max-width:360px;justify-self:center;margin-top:8px}
+  .hero-card{left:50%;transform:translateX(-50%);bottom:-6%}
+  .head,.founder .wrap,.community .wrap,.faq .wrap,.consult .wrap{grid-template-columns:1fr}
+  .head{gap:16px}
+  .figures .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fig:nth-child(3){border-left:0;padding-left:0}
+  .fig:nth-child(n+3){border-top:1px solid var(--line)}
+  .office-grid,.guide-grid{grid-template-columns:1fr}
+  .office address{min-height:0}
+  .f-visual{max-width:440px}
+}
+@media (max-width:760px){
+  .utility .offices-list{display:none}
+  .site-header .btn{display:none}
+  .menu-btn{display:inline-flex}
+  .site-header .wrap{min-height:66px}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;gap:8px;padding:10px 16px calc(12px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);box-shadow:0 -10px 30px rgba(11,22,51,.10)}
+  .mbar .btn{flex:1 1 auto;min-height:52px}
+  .mbar .round{flex:0 0 52px;min-height:52px;padding:0;border-radius:50%}
+  body{padding-bottom:84px}
+  .pr-row{padding:22px 0;gap:6px 16px;grid-template-columns:40px minmax(0,1fr) 44px}
+  .pr-row:hover{padding-left:0;padding-right:0;background:transparent}
+  .pr-title small{display:table;margin:8px 0 0}
+  .pr-go{width:44px;height:44px}
+  .steps{grid-template-columns:1fr}
+  .steps li,.steps li + li{padding:0;border-left:0}
+  .commit-grid{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  .faq summary{font-size:19px}
+  .faq details p{padding-right:0}
+  .f-top{grid-template-columns:1fr}
+  .timeline li{grid-template-columns:64px minmax(0,1fr)}
+  .d-head,.d-body,.d-foot{padding-left:22px;padding-right:22px}
+}
+</style>
+</head>
+<body>
+
+<div class="utility">
+  <div class="wrap">
+    <p><span class="dot" aria-hidden="true"></span>Someone arrested? Call us now: <a href="tel:0399761089">039 976 1089</a></p>
+    <p class="offices-list">Pretoria &nbsp;·&nbsp; Ladysmith &nbsp;·&nbsp; Scottburgh</p>
+  </div>
+</div>
+
+<header class="site-header" id="header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="T Shabalala Attorneys Inc, home">
+      <span class="crest" aria-hidden="true">TS</span>
+      <span class="brand-name"><strong>T SHABALALA</strong><span>Attorneys Inc</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="#practice">Expertise</a>
+      <a class="link" href="#approach">Our approach</a>
+      <a class="link" href="#founder">The firm</a>
+      <a class="link" href="#offices">Offices</a>
+      <a class="link" href="#guides">Guides</a>
+      <a class="btn btn-light" href="#consult">Book a consultation</a>
+      <button class="menu-btn" id="menuOpen" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero on-navy" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow reveal">Attorneys · Gauteng &amp; KwaZulu-Natal · Since 2011</p>
+      <h1 id="hero-title" class="reveal">Legal counsel for the moments that <em>change everything.</em></h1>
+      <p class="lede reveal">Injured on the road or harmed in hospital. Arrested, dismissed or grieving. T Shabalala Attorneys stands beside you, explains every step in plain language and agrees fees in writing before we begin.</p>
+      <div class="actions reveal">
+        <a class="btn btn-light" href="#consult">Book a consultation <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#consult" data-matter="Road accident (RAF)">Check my RAF claim</a>
+      </div>
+      <div class="assure reveal"><span>No win, no fee on RAF claims</span><span>Reply within one working day</span><span>Strictly confidential</span></div>
+    </div>
+    <div class="rings" aria-hidden="true">
+      <svg viewBox="0 0 520 520">
+        <g class="draw" fill="none">
+          <circle cx="260" cy="260" r="255" stroke="rgba(141,176,234,.22)" stroke-width="1"/>
+          <circle cx="260" cy="260" r="200" stroke="rgba(141,176,234,.32)" stroke-width="1"/>
+        </g>
+        <g class="spin"><circle cx="260" cy="5" r="9" fill="#8DB0EA"/><circle cx="515" cy="260" r="5" fill="#fff"/></g>
+        <g class="spin rev"><circle cx="60" cy="260" r="16" fill="#2B59C3"/><circle cx="401" cy="401" r="7" fill="#8DB0EA"/></g>
+      </svg>
+      <div class="portrait-ring"><div><b>TS</b><i>Founder portrait</i></div></div>
+      <a class="hero-card" href="#consult" data-matter="Medical negligence">
+        <small>Medical negligence</small>
+        <strong>Harmed by a doctor or hospital?</strong>
+        <span>Find out if you can claim <span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FIGURES -->
+<section class="figures" aria-label="The firm at a glance">
+  <div class="wrap">
+    <div class="fig"><b>2011</b><span>Serving clients since</span></div>
+    <div class="fig"><b>3</b><span>Offices in Gauteng and KwaZulu-Natal</span></div>
+    <div class="fig"><b>2009</b><span>High Court right of appearance since</span></div>
+    <div class="fig"><b>100%</b><span>Black owned and led</span></div>
+  </div>
+</section>
+
+<!-- STATEMENT -->
+<section class="statement section" aria-label="About the firm">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:26px">The firm</p>
+    <p class="big">We believe <em>good legal help</em> should not depend on the size of your bank balance. For fifteen years we have represented ordinary people and businesses against insurers, hospitals, employers and the State, with the care of a family practice and the rigour of a corporate firm.</p>
+    <p class="sig">Themba Shabalala, Founder</p>
+  </div>
+</section>
+
+<!-- PRACTICE INDEX -->
+<section class="practice section" id="practice" aria-labelledby="practice-title">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Expertise</p><h2 id="practice-title">Eight areas of law. One standard of care.</h2></div>
+      <p>Select an area to see what we handle, how we work and what to bring to your first consultation.</p>
+    </div>
+    <ol class="index" id="index"></ol>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="section" id="approach" aria-labelledby="approach-title">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Our approach</p><h2 id="approach-title">From first call to final outcome.</h2></div>
+      <p>Every matter follows the same clear path, so you always know where you stand and what happens next.</p>
+    </div>
+    <ol class="steps">
+      <li><span class="n">1</span><h3>Tell us what happened</h3><p>Use the two-minute form, call our office or send a WhatsApp message.</p></li>
+      <li><span class="n">2</span><h3>We call you back</h3><p>Within one working day, or immediately if someone is in custody.</p></li>
+      <li><span class="n">3</span><h3>Clear advice and fees</h3><p>We explain your options and agree the fees with you in writing before any work starts.</p></li>
+      <li><span class="n">4</span><h3>We act for you</h3><p>We build the case, negotiate, and go to court when that is what it takes.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- COMMITMENTS -->
+<section class="commit section on-navy" aria-labelledby="commit-title">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Our commitments</p><h2 id="commit-title">What every client can expect.</h2></div>
+      <p>Four promises we make to everyone who walks through our doors, in Pretoria, Ladysmith or Scottburgh.</p>
+    </div>
+    <div class="commit-grid">
+      <div><span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><b>A reply within one working day</b><p>Same day when someone has been arrested.</p></div>
+      <div><span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 14h8M8 18h5"/></svg></span><b>Fees agreed in writing</b><p>No surprises. RAF claims run on a no-win, no-fee basis.</p></div>
+      <div><span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></span><b>Plain language, always</b><p>We explain the law without jargon and keep you updated.</p></div>
+      <div><span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><b>Complete confidentiality</b><p>What you tell us stays between you and your attorney.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder section" id="founder" aria-labelledby="founder-title">
+  <div class="wrap">
+    <div class="f-visual" aria-hidden="true">
+      <span class="circ c1"></span><span class="circ c2"></span><span class="circ c3"></span>
+      <div class="ph"><div><b>TS</b><i>Portrait to come</i></div></div>
+    </div>
+    <div>
+      <p class="eyebrow">Founder</p>
+      <h2 id="founder-title">Themba Shabalala</h2>
+      <p class="bio">Themba began his career as a candidate attorney in 2006 and has handled Road Accident Fund claims, labour disputes, criminal trials, insurance, immigration and estate matters ever since. He later trained in mergers, acquisitions and JSE listing requirements, and holds an LLM in Corporate Law. He built this firm to give everyday South Africans the quality of legal help that large companies expect.</p>
+      <ul class="timeline">
+        <li><b>2006</b><span>LLB, University of KwaZulu-Natal; candidate attorney at Mooney Ford Attorneys</span></li>
+        <li><b>2009</b><span>Right of appearance in the High Court of South Africa</span></li>
+        <li><b>2012</b><span>Founder and trustee, Ladysmith Educational Trust Fund</span></li>
+        <li><b>2014</b><span>Corporate skills-transfer programme, Webber Wentzel</span></li>
+        <li><b>2018</b><span>LLM in Corporate Law, University of Johannesburg</span></li>
+      </ul>
+      <a class="btn btn-primary" href="#consult">Book a consultation <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICES -->
+<section class="offices section" id="offices" aria-labelledby="offices-title">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Offices</p><h2 id="offices-title">Three offices. Two provinces.</h2></div>
+      <p>Visit the office nearest to you, or start the conversation by phone or WhatsApp from anywhere in South Africa.</p>
+    </div>
+    <div class="office-grid">
+      <article class="office">
+        <span class="tag">Head office · Gauteng</span>
+        <h3>Pretoria</h3>
+        <address>3rd Floor, Building 2<br>Brooklyn Bridge Office Park<br>570 Fehrsen Street, Brooklyn, 0011</address>
+        <div class="row"><a class="btn btn-primary" href="#consult" data-office="Pretoria">Book here</a><a class="btn btn-outline" href="https://maps.google.com/?q=570+Fehrsen+Street+Brooklyn+Pretoria">Directions</a></div>
+      </article>
+      <article class="office">
+        <span class="tag">KwaZulu-Natal · uThukela</span>
+        <h3>Ladysmith</h3>
+        <address>Ladysmith, KwaZulu-Natal<br>Serving Ladysmith and the surrounding areas</address>
+        <div class="row"><a class="btn btn-primary" href="#consult" data-office="Ladysmith">Book here</a></div>
+      </article>
+      <article class="office">
+        <span class="tag">KwaZulu-Natal · South Coast</span>
+        <h3>Scottburgh</h3>
+        <address>12 Scott Street<br>Scottburgh, 4180<br>Tel: 039 976 1089</address>
+        <div class="row"><a class="btn btn-primary" href="tel:0399761089">Call 039 976 1089</a><a class="btn btn-outline" href="https://maps.google.com/?q=12+Scott+Street+Scottburgh">Directions</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="community section" aria-labelledby="community-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Pro bono &amp; community</p>
+      <h2 id="community-title">Justice should be equal for all.</h2>
+      <p class="lead">Access to justice should not depend on what you can afford. Our pro bono work and community programmes are part of who we are.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar"><span class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg></span><div><h3>Communities</h3><p>Free legal services for communities, including many living in informal settlements.</p></div></div>
+      <div class="pillar"><span class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></span><div><h3>Start-ups</h3><p>Free weekly legal advice for new entrepreneurs through the Business Place project.</p></div></div>
+      <div class="pillar"><span class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V8l8-5 8 5v11"/><path d="M9 19v-6h6v6"/></svg></span><div><h3>Education</h3><p>The Ladysmith Educational Trust Fund, founded by Themba Shabalala in 2012.</p></div></div>
+      <div class="pillar"><span class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 20c0-2.2 1.3-4 3-4s3 1.8 3 4"/></svg></span><div><h3>Equality</h3><p>Legal support for organisations working for gender equality, and for non-profits.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDES -->
+<section class="guides section" id="guides" aria-labelledby="guides-title">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Guides</p><h2 id="guides-title">Know your rights.</h2></div>
+      <p>Plain-language guides to the questions our clients ask most.</p>
+    </div>
+    <div class="guide-grid">
+      <a class="guide" href="#faq">
+        <div class="art" aria-hidden="true"><span style="width:70%;aspect-ratio:1;background:#2B59C3;opacity:.45;right:-20%;top:-50%"></span><span style="width:12%;aspect-ratio:1;background:#8DB0EA;left:10%;bottom:16%"></span></div>
+        <div class="body"><small>Road Accident Fund</small><h3>How an RAF claim works, step by step</h3><p>Who can claim, what you can claim for, and the time limits.</p><span class="more">Read the guide →</span></div>
+      </a>
+      <a class="guide" href="#faq">
+        <div class="art" aria-hidden="true" style="background:#0B1633"><span style="width:55%;aspect-ratio:1;border:1px solid rgba(141,176,234,.5);left:-10%;top:-30%"></span><span style="width:30%;aspect-ratio:1;background:#1B2F6B;right:12%;bottom:-20%"></span></div>
+        <div class="body"><small>Criminal law</small><h3>What to do when someone is arrested</h3><p>The first 48 hours, bail and your rights.</p><span class="more">Read the guide →</span></div>
+      </a>
+      <a class="guide" href="#faq">
+        <div class="art" aria-hidden="true" style="background:#2B59C3"><span style="width:60%;aspect-ratio:1;background:#1B2F6B;left:-15%;bottom:-55%"></span><span style="width:14%;aspect-ratio:1;background:#fff;right:16%;top:20%"></span></div>
+        <div class="body"><small>Medical negligence</small><h3>Medical negligence: deadlines you must know</h3><p>Claims against private doctors and public hospitals.</p><span class="more">Read the guide →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section" id="faq" aria-labelledby="faq-title" style="background:var(--mist)">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Questions</p>
+      <h2 id="faq-title">Before you call.</h2>
+      <p class="lead">Still unsure? Ask us directly. There is no obligation to go ahead after your first conversation.</p>
+      <a class="btn btn-primary" href="#consult">Book a consultation</a>
+    </div>
+    <div>
+      <details open><summary>What does no win, no fee mean for an RAF claim?<span class="pm" aria-hidden="true">+</span></summary><p>You pay no legal fee unless your claim succeeds. If it does, our fee is a share of what you receive, limited by the Contingency Fees Act, and explained in writing before you sign.</p></details>
+      <details><summary>How long do I have to claim from the RAF?<span class="pm" aria-hidden="true">+</span></summary><p>Usually three years from the date of the accident, and two years if the driver was never identified. Contact us early, as medical and police records take time to collect.</p></details>
+      <details><summary>Can I claim against a government hospital?<span class="pm" aria-hidden="true">+</span></summary><p>Yes. Claims are brought against the provincial health department, and a formal notice must usually be sent within six months. Different rules can apply to children.</p></details>
+      <details><summary>A family member has been arrested. What should I do?<span class="pm" aria-hidden="true">+</span></summary><p>Call us straight away on 039 976 1089. An arrested person must be brought before a court within 48 hours, which is usually when bail is decided.</p></details>
+      <details><summary>I was dismissed. Is it too late to challenge it?<span class="pm" aria-hidden="true">+</span></summary><p>An unfair dismissal dispute generally has to be referred to the CCMA within 30 days. Speak to us as soon as possible.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULT -->
+<section class="consult section on-navy" id="consult" aria-labelledby="consult-title">
+  <span class="bg1" aria-hidden="true"></span><span class="bg2" aria-hidden="true"></span>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Book a consultation</p>
+      <h2 id="consult-title">Talk to an attorney this week.</h2>
+      <p class="lead">Tell us what happened in two minutes. An attorney's office will call you back within one working day.</p>
+      <div class="contact-lines">
+        <a href="tel:0399761089"><span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></span>039 976 1089</a>
+        <a href="mailto:info@shabalalainc.co.za"><span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>info@shabalalainc.co.za</a>
+        <div><span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>Pretoria · Ladysmith · Scottburgh</div>
+      </div>
+    </div>
+
+    <div class="form" id="formCard">
+      <form id="consultForm" novalidate>
+        <h3>Request a consultation</h3>
+        <p class="sub">Takes two minutes. Your details stay confidential.</p>
+        <p class="legend" id="matterLabel">What is it about?</p>
+        <div class="chips" role="group" aria-labelledby="matterLabel" id="chips"></div>
+        <div class="two">
+          <div class="field"><label for="fName">Your name</label><input id="fName" name="name" autocomplete="name" placeholder="e.g. Nomsa Dlamini"><span class="err">Please enter your name.</span></div>
+          <div class="field"><label for="fPhone">Cell or WhatsApp number</label><input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 082 123 4567"><span class="err">Please enter a number we can call.</span></div>
+        </div>
+        <div class="field"><label for="fOffice">Nearest office</label><select id="fOffice" name="office"><option>Pretoria</option><option>Ladysmith</option><option>Scottburgh</option></select></div>
+        <div class="field"><label for="fMsg">What happened? <span style="font-weight:400;color:var(--muted)">(optional)</span></label><textarea id="fMsg" name="message" placeholder="A few words is enough"></textarea></div>
+        <label class="consent" id="consentWrap"><input type="checkbox" id="fConsent">I agree that T Shabalala Attorneys Inc may contact me about my matter, as set out in the privacy notice.</label>
+        <button class="btn btn-primary" type="submit">Request my consultation <span class="arrow" aria-hidden="true">→</span></button>
+      </form>
+      <div class="success" role="status" aria-live="polite">
+        <div class="tick" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3 id="successTitle">Thank you.</h3>
+        <p id="successText"></p>
+        <p style="margin-top:14px;font-size:13px">Preview only: in the live website, this request goes straight to the firm.</p>
+        <button class="btn btn-outline" type="button" id="again" style="margin-top:22px;width:auto">Send another request</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-brand">
+        <a class="brand" href="#top" style="color:#fff"><span class="crest" aria-hidden="true">TS</span><span class="brand-name"><strong>T SHABALALA</strong><span>Attorneys Inc</span></span></a>
+        <p>Legal help for people and businesses in Gauteng and KwaZulu-Natal, since 2011. 100% Black owned.</p>
+      </div>
+      <div><h4>Expertise</h4><ul id="footList"></ul></div>
+      <div><h4>Offices</h4><ul><li>Pretoria · Brooklyn</li><li>Ladysmith · KZN</li><li>Scottburgh · South Coast</li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:0399761089">039 976 1089</a></li><li><a href="mailto:info@shabalalainc.co.za">info@shabalalainc.co.za</a></li><li><a href="#consult">Book a consultation</a></li></ul></div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="year">2026</span> T Shabalala Attorneys Inc · Registered with the Legal Practice Council</span>
+      <span><a href="#top">Privacy notice (POPIA)</a> · <a href="#top">PAIA manual</a> · <a href="#top">Disclaimer</a> · This website is general information, not legal advice.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile action bar -->
+<div class="mbar" aria-label="Quick contact">
+  <a class="btn btn-primary" href="#consult">Book a consultation</a>
+  <a class="btn btn-outline round" href="tel:0399761089" aria-label="Call 039 976 1089"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></a>
+</div>
+
+<!-- Mobile menu -->
+<div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="top">
+    <span class="brand" style="color:#fff"><span class="crest" aria-hidden="true">TS</span><span class="brand-name"><strong>T SHABALALA</strong><span>Attorneys Inc</span></span></span>
+    <button class="menu-btn" id="menuClose" aria-label="Close menu" style="display:inline-flex;border-color:rgba(255,255,255,.5);color:#fff">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="#practice">Expertise <span aria-hidden="true">→</span></a>
+    <a href="#approach">Our approach <span aria-hidden="true">→</span></a>
+    <a href="#founder">The firm <span aria-hidden="true">→</span></a>
+    <a href="#offices">Offices <span aria-hidden="true">→</span></a>
+    <a href="#faq">Questions <span aria-hidden="true">→</span></a>
+  </nav>
+  <div class="call">
+    <p class="urgent">Someone arrested? Call 039 976 1089</p>
+    <a class="btn btn-light" href="#consult">Book a consultation</a>
+  </div>
+</div>
+
+<!-- Practice drawer -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle">
+  <div class="d-head">
+    <button class="d-close" id="dClose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <p class="num" id="dNum"></p>
+    <h3 id="dTitle"></h3>
+    <p id="dSummary"></p>
+  </div>
+  <div class="d-body">
+    <h4>What we handle</h4><ul id="dHandle"></ul>
+    <h4>What to bring</h4><ul id="dBring"></ul>
+  </div>
+  <div class="d-foot">
+    <a class="btn btn-primary" href="#consult" id="dCta">Book a consultation</a>
+    <a class="btn btn-outline" href="tel:0399761089">Call us</a>
+  </div>
+</aside>
+
+<script>
+(function(){
+  var AREAS = [
+    {t:"Road Accident Fund claims", tag:"No win, no fee", chip:"Road accident (RAF)", d:"Compensation for injuries, lost income or the loss of a breadwinner after a crash.",
+     h:["Passengers, pedestrians, cyclists and drivers hit by another driver","Medical costs, now and in future","Lost income and loss of earning capacity","Loss of support and funeral costs when a breadwinner dies"],
+     b:["Your ID","Police case number or accident report","Hospital and doctor records","Proof of income, such as payslips"]},
+    {t:"Medical negligence", tag:"Lead service", chip:"Medical negligence", d:"Claims for harm caused by a doctor, nurse or hospital, private or public.",
+     h:["Wrong or late diagnosis","Surgical and medication errors","Birth injuries to mother or baby","Claims against provincial health departments"],
+     b:["Your ID","Hospital cards and discharge papers","Prescriptions and doctors' letters","A short timeline of what happened"]},
+    {t:"Criminal defence & bail", tag:"", chip:"Criminal or bail", d:"Bail applications, trials and appeals. We act fast when someone is in custody.",
+     h:["Bail applications","Studying the State's docket and advising on your position","Defence at trial","Appeals against conviction or sentence"],
+     b:["Name of the person arrested","Police station and case number","Date of the first court appearance","Proof of address and employment"]},
+    {t:"Employment & labour law", tag:"", chip:"Dismissal or labour", d:"Dismissals, disciplinary hearings and CCMA disputes, for employees and employers.",
+     h:["Unfair dismissal and retrenchment","Misconduct and poor-performance processes","CCMA, bargaining council and Labour Court","Advice for employers before they act"],
+     b:["Employment contract","Payslips","Warning, hearing or dismissal letters","Any CCMA documents"]},
+    {t:"Injury & insurance claims", tag:"", chip:"Injury or insurance", d:"Mining and workplace injuries, occupational disease, and refused insurance or pension claims.",
+     h:["Mining accidents and occupational injuries","Occupational diseases","Rejected or underpaid insurance claims","Pension fund and life cover disputes"],
+     b:["Your ID","Medical records","Policy or benefit documents","Letters from the insurer or employer"]},
+    {t:"Family law", tag:"", chip:"Divorce or family", d:"Divorce, maintenance and custody, handled with care and in confidence.",
+     h:["Contested and uncontested divorce","Care, contact and parenting plans","Child and spousal maintenance","Settlement agreements"],
+     b:["Marriage certificate","Children's birth certificates","Proof of income and expenses","Any existing court orders"]},
+    {t:"Wills & estates", tag:"", chip:"Will or estate", d:"Valid wills, executorships and winding up estates after the loss of a loved one.",
+     h:["Drafting wills and estate planning","Acting as executor","Reporting and winding up deceased estates","Resolving disputes between heirs"],
+     b:["Death certificate","The original will, if there is one","IDs of the deceased and the heirs","Bank, policy and property statements"]},
+    {t:"Commercial litigation", tag:"", chip:"Business dispute", d:"Contract, debt and shareholder disputes, local and international, at a cost that fits the claim.",
+     h:["Contract disputes and breach of contract","Debt recovery","Shareholder and director disputes","Urgent court applications"],
+     b:["The contract or agreement","Invoices and statements","Correspondence about the dispute","Company registration documents"]}
+  ];
+
+  function el(tag, cls, html){var e=document.createElement(tag); if(cls) e.className=cls; if(html!=null) e.innerHTML=html; return e;}
+  function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+
+  // Practice index
+  var index = document.getElementById("index");
+  var foot = document.getElementById("footList");
+  AREAS.forEach(function(a,i){
+    var li = el("li");
+    var b = el("button","pr-row");
+    b.type="button";
+    b.setAttribute("aria-haspopup","dialog");
+    b.innerHTML = '<span class="pr-num">'+String(i+1).padStart(2,"0")+'</span>'+
+      '<span class="pr-title">'+esc(a.t)+(a.tag?'<small>'+esc(a.tag)+'</small>':'')+'</span>'+
+      '<span class="pr-desc">'+esc(a.d)+'</span>'+
+      '<span class="pr-go" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>';
+    b.addEventListener("click", function(){ openDrawer(i, b); });
+    li.appendChild(b); index.appendChild(li);
+    var fl = el("li"); var fa = el("a",null,esc(a.t)); fa.href="#practice"; fl.appendChild(fa); foot.appendChild(fl);
+  });
+
+  // Drawer
+  var root = document.documentElement, drawer = document.getElementById("drawer"), scrim=document.getElementById("scrim"), lastFocus=null, current=0;
+  function list(id, items){var ul=document.getElementById(id); ul.innerHTML=""; items.forEach(function(x){ul.appendChild(el("li",null,"<span>"+esc(x)+"</span>"))});}
+  function openDrawer(i, from){
+    var a=AREAS[i]; current=i; lastFocus=from;
+    document.getElementById("dNum").textContent = String(i+1).padStart(2,"0")+" / 08";
+    document.getElementById("dTitle").textContent = a.t;
+    document.getElementById("dSummary").textContent = a.d;
+    list("dHandle", a.h); list("dBring", a.b);
+    root.classList.add("open");
+    setTimeout(function(){document.getElementById("dClose").focus()},50);
+  }
+  function closeDrawer(){ root.classList.remove("open"); if(lastFocus) lastFocus.focus(); }
+  document.getElementById("dClose").addEventListener("click", closeDrawer);
+  scrim.addEventListener("click", closeDrawer);
+  document.getElementById("dCta").addEventListener("click", function(){ selectMatter(AREAS[current].chip); closeDrawer(); });
+
+  // Mobile menu
+  var mOpen=document.getElementById("menuOpen"), mClose=document.getElementById("menuClose"), mnav=document.getElementById("mnav");
+  function openMenu(){ root.classList.add("menu-open"); mOpen.setAttribute("aria-expanded","true"); setTimeout(function(){mClose.focus()},50); }
+  function closeMenu(){ root.classList.remove("menu-open"); mOpen.setAttribute("aria-expanded","false"); }
+  mOpen.addEventListener("click", openMenu);
+  mClose.addEventListener("click", function(){ closeMenu(); mOpen.focus(); });
+  mnav.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", closeMenu); });
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape"){ if(root.classList.contains("open")) closeDrawer(); if(root.classList.contains("menu-open")){ closeMenu(); mOpen.focus(); } } });
+
+  // Header state + active link
+  var header=document.getElementById("header");
+  var links=[].slice.call(document.querySelectorAll(".nav a.link"));
+  var sections=links.map(function(l){return document.querySelector(l.getAttribute("href"))});
+  function onScroll(){
+    header.classList.toggle("scrolled", window.scrollY > 40);
+    var y = window.scrollY + 120, active=-1;
+    sections.forEach(function(s,i){ if(s && s.offsetTop <= y) active=i; });
+    links.forEach(function(l,i){ l.classList.toggle("active", i===active); });
+  }
+  window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+  // Matter chips
+  var chipsBox=document.getElementById("chips"), chosen=AREAS[0].chip;
+  var chipLabels = AREAS.map(function(a){return a.chip}).concat(["Something else"]);
+  chipLabels.forEach(function(c){
+    var b=el("button","chip",esc(c)); b.type="button"; b.setAttribute("aria-pressed", c===chosen?"true":"false");
+    b.addEventListener("click", function(){ selectMatter(c); });
+    chipsBox.appendChild(b);
+  });
+  function selectMatter(c){
+    chosen=c;
+    [].forEach.call(chipsBox.children, function(b){ b.setAttribute("aria-pressed", b.textContent===c?"true":"false"); });
+  }
+  document.querySelectorAll("[data-matter]").forEach(function(a){ a.addEventListener("click", function(){ selectMatter(a.getAttribute("data-matter")); }); });
+  document.querySelectorAll("[data-office]").forEach(function(a){ a.addEventListener("click", function(){ document.getElementById("fOffice").value=a.getAttribute("data-office"); }); });
+
+  // Form
+  var form=document.getElementById("consultForm"), card=document.getElementById("formCard");
+  function setInvalid(id, bad){ document.getElementById(id).closest(".field").classList.toggle("invalid", bad); }
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var name=document.getElementById("fName").value.trim();
+    var phone=document.getElementById("fPhone").value.replace(/\s/g,"");
+    var consent=document.getElementById("fConsent").checked;
+    var badName=name.length<2, badPhone=!/^\+?\d{9,13}$/.test(phone);
+    setInvalid("fName", badName); setInvalid("fPhone", badPhone);
+    document.getElementById("consentWrap").classList.toggle("invalid", !consent);
+    if(badName){document.getElementById("fName").focus(); return;}
+    if(badPhone){document.getElementById("fPhone").focus(); return;}
+    if(!consent){document.getElementById("fConsent").focus(); return;}
+    var office=document.getElementById("fOffice").value;
+    document.getElementById("successTitle").textContent = "Thank you, " + name.split(" ")[0] + ".";
+    document.getElementById("successText").textContent = "Your request about “" + chosen + "” will go to our " + office + " office, and an attorney's office will call you within one working day.";
+    card.classList.add("done");
+  });
+  document.getElementById("again").addEventListener("click", function(){ form.reset(); selectMatter(AREAS[0].chip); card.classList.remove("done"); });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
